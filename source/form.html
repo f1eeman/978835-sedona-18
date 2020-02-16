@@ -35,7 +35,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title visually-hidden">Форма обратной связи</h1>
+      <h1 class="page-main__title visually-hidden">Форма отзыва</h1>
       <div class="page-main__banner page-main__banner--small">
         <img class="page-main__banner-text" src="img/text-sedona.svg" width="460" height="80" alt="Sedona">
       </div>
@@ -45,18 +45,78 @@
         <form class="filters__filter-form filter-form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="filter-form__fieldset filter-form__fieldset--user-data">
             <h3 class="filter-form__title">Представьтесь:</h3>
+            <ul class="filter-form__list filter-form__list--initials" role="presentation">
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="user-name">Имя:*</label>
+                <input class="filter-form__control" id="user-name" name="name" type="text" placeholder="Петр" value="" required>
+              </li>
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="user-surname">Фамилия:*</label>
+                <input class="filter-form__control" id="user-surname" name="surname" type="text" placeholder="Иванов" value="" required>
+              </li>
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="user-patronymic">Отчество:</label>
+                <input class="filter-form__control" id="user-patronymic" name="patronymic" type="text" placeholder="Александрович" value="">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter-form__fieldset filter-form__fieldset--contacts">
             <h3 class="filter-form__title">Контактная информация:</h3>
+            <ul class="filter-form__list filter-form__list--contacts">
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="user-tel">Контактный телефон*:</label>
+                <input class="filter-form__control" id="user-tel" name="user-tel" type="tel"  placeholder="Введите телефон" value="" required>
+              </li>
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="user-email">Электронная почта*:</label>
+                <input class="filter-form__control" id="user-email" name="user-email" type="email"  placeholder="Введите e-mail" value="" required>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter-form__fieldset filter-form__fieldset--impression">
             <h3 class="filter-form__title">Ваше Общее впечатление:</h3>
+            <ul class="filter-form__list filter-form__list--impression">
+              <li class="filter-form__item">
+                <input class="filter-form__control filter-form__control--radio visually-hidden" id="good" name="user-impression" type="radio" value="good" checked>
+                <label class="filter-form__label filter-form__label--radio" for="good">Скорее положительное</label>
+              </li>
+              <li class="filter-form__item">
+                <input class="filter-form__control filter-form__control--radio visually-hidden" id="bad" name="user-impression" type="radio" value="bad">
+                <label class="filter-form__label filter-form__label--radio" for="bad">Скорее отрицательное</label>
+              </li>
+              <li class="filter-form__item">
+                <input class="filter-form__control filter-form__control--radio visually-hidden" id="don't-know" name="user-impression" type="radio" value="don't-know">
+                <label class="filter-form__label filter-form__label--radio" for="don't-know">Затрудняюсь ответить</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter-form__fieldset filter-form__fieldset--attractions">
             <h3 class="filter-form__title">Посещенные  достопримечательности:</h3>
+            <ul class="filter-form__list filter-form__list--attractions">
+              <li class="filter-form__item">
+                <input class="filter-form__control filter-form__control--checkbox visually-hidden" id="bridge" name="bridge" type="checkbox" checked>
+                <label class="filter-form__label filter-form__label--checkbox" for="bridge">Дерзкий мост</label>
+              </li>
+              <li class="filter-form__item">
+                <input class="filter-form__control filter-form__control--checkbox visually-hidden" id="mountain" name="mountain" type="checkbox" checked>
+                <label class="filter-form__label filter-form__label--checkbox" for="mountain">Гора-Колокол</label>
+              </li>
+              <li class="filter-form__item">
+                <input class="filter-form__control filter-form__control--checkbox visually-hidden" id="park" name="park" type="checkbox" checked>
+                <label class="filter-form__label filter-form__label--checkbox" for="park">Слайд-парк</label>
+              </li>
+              <li class="filter-form__item">
+                <input class="filter-form__control filter-form__control--checkbox visually-hidden" id="rocks" name="rocks" type="checkbox">
+                <label class="filter-form__label filter-form__label--checkbox" for="rocks">Красные скалы</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter-form__fieldset filter-form__fieldset--emotions">
             <h3 class="filter-form__title">Опишите свои эмоции:</h3>
+            <p class="filter-form__box-emotions">
+              <label class="filter-form__label filter-form__label--textarea visually-hidden" for="additional-info">Дополнительная информация:</label>
+              <textarea class="filter-form__control filter-form__control--textarea" name="additional-info" id="additional-info" placeholder="Опишите подробно все свои восторги"></textarea>
+            </p>
           </fieldset>
           <button class="filter-form__button button" type="submit">Отправить отзыв</button>
         </form>
