@@ -1,0 +1,87 @@
+@mixin text($font-size: 14px, $line-height: 21px, $font-weight: 400) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin size-img($width: 100%, $max-width: 100%, $height: auto) {
+  width: $width;
+  max-width: $max-width;
+  height: $height;
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin button-reset() {
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+}
+
+// @mixin disabled {
+//   background-color: $color-disabled-bg;
+//   opacity: 0.5;
+// }
+
+// @mixin label-disabled {
+//   opacity: 0.3;
+//   pointer-events: none;
+// }
+
+//Лечит проблему поведения SVG элемента, как ссылки, при нажатии в IE11
+@mixin ie-bug-fix() {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+  }
+}
+
+@mixin transition-time($transition-duration: 90ms) {
+  transition-duration: $transition-duration;
+}
+
+@mixin centering() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin mobile-view($mobile-width: 320px, $mobile-padding: 0 20px) {
+  width: $mobile-width;
+  padding: $mobile-padding;
+}
+
+@mixin tablet-view($tablet-width: 768px, $tablet-padding: 0 30px) {
+  width: $tablet-width;
+  padding: $tablet-padding;
+}
+
+@mixin desktop-view($desktop-width: 1200px, $desktop-padding: 0 30px) {
+  width: $desktop-width;
+  padding: $desktop-padding;
+}
+
+@mixin mobile-padding($padding-left: 20px, $padding-right: 20px) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+@mixin tablet-padding($padding-left: 30px, $padding-right: 30px) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
