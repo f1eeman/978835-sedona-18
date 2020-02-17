@@ -24,10 +24,9 @@
   border: none;
 }
 
-// @mixin disabled {
-//   background-color: $color-disabled-bg;
-//   opacity: 0.5;
-// }
+@mixin disabled() {
+  background-color: $disabled-color-bg;
+}
 
 // @mixin label-disabled {
 //   opacity: 0.3;
@@ -51,7 +50,7 @@
   }
 }
 
-@mixin transition-time($transition-duration: 90ms) {
+@mixin transition-time($transition-duration: 100ms) {
   transition-duration: $transition-duration;
 }
 
@@ -84,4 +83,3 @@
   padding-left: $padding-left;
   padding-right: $padding-right;
 }
-

@@ -1,0 +1,7 @@
+.appointment__title {
+  @include text(21px, 26px, 700);
+}
+
+.appointment__info {
+  @include text(14px, 24px);
+}

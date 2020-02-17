@@ -1,0 +1,15 @@
+.sedona-hashtag__link {
+  @include text(21px, 26px, 700);
+  color: $third-color-text;
+
+  @include transition-time();
+
+  &:hover,
+  &:focus {
+    color: $fourth-color-text-hover;
+  }
+
+  &:active {
+    color: $third-color-text-active;
+  }
+}

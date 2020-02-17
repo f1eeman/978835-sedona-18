@@ -1,0 +1,29 @@
+.features__slogan {
+  @include text(18px, 26px, 700);
+}
+
+.features__text {
+  @include text(14px, 26px);
+}
+
+.features__list {
+  @include list-reset();
+}
+
+.features__sublist {
+  @include list-reset();
+}
+
+.features__item--picture {
+  color: $secondary-color-text;
+
+  background-color: $secondary-bg;
+}
+
+.features__subtitle {
+  @include text(18px, 26px, 700);
+}
+
+.features__info {
+  @include text(14px, 21px);
+}

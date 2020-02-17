@@ -1,0 +1,26 @@
+.button {
+  @include button-reset();
+  @include text(21px, 26px, 700);
+  font-family: $main-font;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+
+  background-color: $secondary-bg;
+
+  @include transition-time();
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-bg-hover;
+  }
+
+  &:active {
+    color: $secondary-color-text-active;
+
+    background-color: $secondary-bg-active;
+  }
+
+  &[disabled] {
+    @include disabled();
+  }
+}
