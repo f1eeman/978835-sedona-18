@@ -1,0 +1,4 @@
+.main-style-title {
+  @include text(18px, 26px, 700);
+  color: $third-color-text;
+}

@@ -1,0 +1,7 @@
+.photo__intro {
+  @include text(14px, 24px);
+}
+
+.photo__list {
+  @include list-reset();
+}

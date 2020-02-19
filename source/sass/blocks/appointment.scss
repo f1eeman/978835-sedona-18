@@ -1,5 +1,6 @@
 .appointment__title {
   @include text(21px, 26px, 700);
+  color: $third-color-text;
 }
 
 .appointment__info {

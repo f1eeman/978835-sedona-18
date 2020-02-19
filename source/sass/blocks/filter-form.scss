@@ -1,0 +1,51 @@
+.filter-form__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-form__list {
+  @include list-reset();
+}
+
+.filter-form__control {
+  @include text(18px, 26px, 700);
+  font-family: $main-font;
+  color: $third-color-text;
+
+  background-color: $fifth-bg;
+  border: none;
+
+  @include transition-time();
+
+  &::placeholder {
+    @include text(18px, 26px, 700);
+    font-family: $main-font;
+    color: $third-color-text;
+  }
+
+  &:hover {
+    background-color: $sixth-bg;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $color-main-bg;
+    outline: 4px solid $sixth-bg;
+  }
+}
+
+.filter-form__control--textarea {
+  resize: none;
+}
+
+.filter-form__label {
+  @include text(14px, 26px);
+}
+
+.filter-form__label--switch {
+  @include text(18px, 26px, 700);
+  color: $third-color-text;
+  text-transform: none;
+}

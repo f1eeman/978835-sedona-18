@@ -13,7 +13,7 @@
     <header class="page-header">
       <nav class="page-header__main-nav main-nav">
         <p class="main-nav__logo-box">
-          <a class="main-nav__logo">
+          <a class="main-nav__logo" href="index.html">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -45,11 +45,11 @@
         <img class="page-main__banner-text" src="img/text-sedona.svg" width="460" height="80" alt="Sedona">
       </div>
       <section class="page-main__filters filters">
-        <h2 class="filters__title">Оставьте свой отзыв</h2>
+        <h2 class="filters__title main-style-title">Оставьте свой отзыв</h2>
         <p class="filters__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="filters__filter-form filter-form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="filter-form__fieldset filter-form__fieldset--user-data">
-            <h3 class="filter-form__title">Представьтесь:</h3>
+            <h3 class="filter-form__title main-style-title">Представьтесь:</h3>
             <ul class="filter-form__list filter-form__list--initials" role="presentation">
               <li class="filter-form__item">
                 <label class="filter-form__label" for="user-name">Имя:*</label>
@@ -66,7 +66,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-form__fieldset filter-form__fieldset--contacts">
-            <h3 class="filter-form__title">Контактная информация:</h3>
+            <h3 class="filter-form__title main-style-title">Контактная информация:</h3>
             <ul class="filter-form__list filter-form__list--contacts">
               <li class="filter-form__item">
                 <label class="filter-form__label" for="user-tel">Контактный телефон*:</label>
@@ -79,45 +79,45 @@
             </ul>
           </fieldset>
           <fieldset class="filter-form__fieldset filter-form__fieldset--impression">
-            <h3 class="filter-form__title">Ваше Общее впечатление:</h3>
+            <h3 class="filter-form__title main-style-title">Ваше Общее впечатление:</h3>
             <ul class="filter-form__list filter-form__list--impression">
               <li class="filter-form__item">
                 <input class="filter-form__control filter-form__control--radio visually-hidden" id="good" name="user-impression" type="radio" value="good" checked>
-                <label class="filter-form__label filter-form__label--radio" for="good">Скорее положительное</label>
+                <label class="filter-form__label filter-form__label--radio filter-form__label--switch" for="good">Скорее положительное</label>
               </li>
               <li class="filter-form__item">
                 <input class="filter-form__control filter-form__control--radio visually-hidden" id="bad" name="user-impression" type="radio" value="bad">
-                <label class="filter-form__label filter-form__label--radio" for="bad">Скорее отрицательное</label>
+                <label class="filter-form__label filter-form__label--radio filter-form__label--switch" for="bad">Скорее отрицательное</label>
               </li>
               <li class="filter-form__item">
                 <input class="filter-form__control filter-form__control--radio visually-hidden" id="don't-know" name="user-impression" type="radio" value="don't-know">
-                <label class="filter-form__label filter-form__label--radio" for="don't-know">Затрудняюсь ответить</label>
+                <label class="filter-form__label filter-form__label--radio filter-form__label--switch" for="don't-know">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-form__fieldset filter-form__fieldset--attractions">
-            <h3 class="filter-form__title">Посещенные  достопримечательности:</h3>
+            <h3 class="filter-form__title main-style-title">Посещенные  достопримечательности:</h3>
             <ul class="filter-form__list filter-form__list--attractions">
               <li class="filter-form__item">
                 <input class="filter-form__control filter-form__control--checkbox visually-hidden" id="bridge" name="bridge" type="checkbox" checked>
-                <label class="filter-form__label filter-form__label--checkbox" for="bridge">Дерзкий мост</label>
+                <label class="filter-form__label filter-form__label--checkbox filter-form__label--switch" for="bridge">Дерзкий мост</label>
               </li>
               <li class="filter-form__item">
                 <input class="filter-form__control filter-form__control--checkbox visually-hidden" id="mountain" name="mountain" type="checkbox" checked>
-                <label class="filter-form__label filter-form__label--checkbox" for="mountain">Гора-Колокол</label>
+                <label class="filter-form__label filter-form__label--checkbox filter-form__label--switch" for="mountain">Гора-Колокол</label>
               </li>
               <li class="filter-form__item">
                 <input class="filter-form__control filter-form__control--checkbox visually-hidden" id="park" name="park" type="checkbox" checked>
-                <label class="filter-form__label filter-form__label--checkbox" for="park">Слайд-парк</label>
+                <label class="filter-form__label filter-form__label--checkbox filter-form__label--switch" for="park">Слайд-парк</label>
               </li>
               <li class="filter-form__item">
                 <input class="filter-form__control filter-form__control--checkbox visually-hidden" id="rocks" name="rocks" type="checkbox">
-                <label class="filter-form__label filter-form__label--checkbox" for="rocks">Красные скалы</label>
+                <label class="filter-form__label filter-form__label--checkbox filter-form__label--switch" for="rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-form__fieldset filter-form__fieldset--emotions">
-            <h3 class="filter-form__title">Опишите свои эмоции:</h3>
+            <h3 class="filter-form__title main-style-title">Опишите свои эмоции:</h3>
             <p class="filter-form__box-emotions">
               <label class="filter-form__label filter-form__label--textarea visually-hidden" for="additional-info">Дополнительная информация:</label>
               <textarea class="filter-form__control filter-form__control--textarea" name="additional-info" id="additional-info" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -159,5 +159,16 @@
         </div>
       </div>
     </footer>
+    <section class="page-modal-error modal-error">
+      <h2 class="modal-error__title">Что-то пошло не так!</h2>
+      <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal-error__button button">Ок</button>
+    </section>
+    <section class="page-modal-review modal-review">
+      <h2 class="modal-review__title">Ваш отзыв отправлен!</h2>
+      <p class="modal-review__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal-review__button button">Закрыть окно</button>
+    </section>
+    <div class="page-modal-overlay"></div>в
   </body>
 </html>

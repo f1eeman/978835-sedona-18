@@ -1,0 +1,10 @@
+.photo-card {
+  @include text(14px, 24px, 700);
+  color: $third-color-text;
+}
+
+.photo-card__text {
+  font-weight: 400;
+  color: $main-color-text;
+  text-transform: none;
+}
