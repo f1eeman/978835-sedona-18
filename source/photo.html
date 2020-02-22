@@ -11,30 +11,31 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__main-nav main-nav">
-        <p class="main-nav__logo-box">
-          <a class="main-nav__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
-            </picture>
-          </a>
-        </p>
-        <ul class="main-nav__site-list site-list user-list">
+      <nav class="page-header__main-nav main-nav main-nav--closed main-nav--no-js">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+        <a class="main-nav__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+          </picture>
+        </a>
+        <ul class="main-nav__site-list main-nav__site-list--left site-list">
           <li class="site-list__item">
-            <a class="site-list__link user-list__link" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link user-list__link">Фото и видео</a>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Фото и видео</a>
           </li>
         </ul>
-        <ul class="main-nav__form-list form-list user-list">
-          <li class="form-list__item">
-            <a class="form-list__link user-list__link" href="form.html">Форма отзыва</a>
+        <ul class="main-nav__site-list main-nav__site-list--right site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="form-list__item">
-            <a class="form-list__link user-list__link" href="hotels.html">Гостиницы</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -42,8 +43,10 @@
     <main class="page-main">
       <h1 class="page-main__title visually-hidden">Достопримечательности Седоны</h1>
       <div class="page-main__banner page-main__banner--small">
-        <img class="page-main__banner-text" src="img/text-sedona.svg" width="460" height="80" alt="Sedona">
-      </div>
+        <p class="page-main__banner-box page-main__banner-box--small">
+          <img class="page-main__banner-text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
+        </p>
+        </div>
       <section class="page-main__media media">
         <h2 class="media__title main-style-title">Фото и видео</h2>
         <section class="media__photo photo">
@@ -60,7 +63,7 @@
                   </p>
                 </div>
                 <div class="photo-card__box-likes">
-                  <button class="photo-card__like button">
+                  <button class="photo-card__like button" type="button">
                     <span class="visually-hidden">Поставить лайк</span>
                     <!-- svg -->
                   </button>
@@ -88,7 +91,7 @@
                   </p>
                 </div>
                 <div class="photo-card__box-likes">
-                  <button class="photo-card__like button">
+                  <button class="photo-card__like button" type="button">
                     <span class="visually-hidden">Поставить лайк</span>
                     <!-- svg -->
                   </button>
@@ -116,7 +119,7 @@
                   </p>
                 </div>
                 <div class="photo-card__box-likes">
-                  <button class="photo-card__like button">
+                  <button class="photo-card__like button" type="button">
                     <span class="visually-hidden">Поставить лайк</span>
                     <!-- svg -->
                   </button>
@@ -144,7 +147,7 @@
                   </p>
                 </div>
                 <div class="photo-card__box-likes">
-                  <button class="photo-card__like button">
+                  <button class="photo-card__like button" type="button">
                     <span class="visually-hidden">Поставить лайк</span>
                     <!-- svg -->
                   </button>
@@ -172,16 +175,16 @@
           </div>
           <div class="video__wrapper">
             <div class="video__wrapper-controls">
-              <button class="video__replay">
+              <button class="video__replay" type="button">
                 <span class="visually-hidden">Проиграть занаво</span>
               </button>
               <div class="video__control">
                 <!-- scale and button -->
               </div>
-              <button class="video__subtitles">
+              <button class="video__subtitles" type="button">
                 <span class="visually-hidden">Включить субтитры</span>
               </button>
-              <button class="video__fullscreen">
+              <button class="video__fullscreen" type="button">
                 <span class="visually-hidden">На весь экран</span>
               </button>
             </div>
@@ -221,5 +224,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

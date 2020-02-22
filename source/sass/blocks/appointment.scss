@@ -1,8 +1,32 @@
+.appointment {
+  padding-top: 29px;
+  padding-bottom: 49px;
+
+  @include mobile-padding();
+}
+
 .appointment__title {
+  width: 280px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @include centering();
   @include text(21px, 26px, 700);
   color: $third-color-text;
+  text-align: center;
 }
 
 .appointment__info {
+  width: 280px;
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  @include centering();
   @include text(14px, 24px);
+  text-align: center;
+}
+
+.appointment__search {
+  width: 100%;
+  padding: 15px 35px;
 }

@@ -2,7 +2,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "global-styles.scss";
-@import "blocks/user-list.scss";
+@import "blocks/site-list.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/features.scss";
 @import "blocks/appointment.scss";
@@ -19,8 +19,8 @@
 @import "blocks/main-style-title.scss";
 @import "blocks/filters.scss";
 @import "blocks/filter-form.scss";
-// @import "blocks/features.scss";
-// @import "blocks/features.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main__banner.scss";
 // @import "blocks/features.scss";
 // @import "blocks/features.scss";
 // @import "blocks/features.scss";

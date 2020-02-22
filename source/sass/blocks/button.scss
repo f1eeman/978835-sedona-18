@@ -7,6 +7,8 @@
 
   background-color: $secondary-bg;
 
+  cursor: pointer;
+
   @include transition-time();
 
   &:hover,
