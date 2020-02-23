@@ -1,3 +1,47 @@
 .page-footer {
+  padding-top: 32px;
+  padding-bottom: 23px;
+
+  @include mobile-padding();
+
   background-color: $third-bg;
+}
+
+.page-footer__sedona-hashtag {
+  margin-bottom: 35px;
+
+  @include centering();
+}
+
+.page-footer__social-list {
+  @include centering();
+  margin-bottom: 33px;
+}
+
+.page-footer__copyright {
+  @include centering();
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 35px;
+  }
+
+  .page-footer__sedona-hashtag {
+    margin: 0;
+  }
+
+  .page-footer__social-list {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+  }
 }

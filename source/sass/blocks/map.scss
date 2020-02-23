@@ -1,3 +1,40 @@
+.map__wrap {
+  position: relative;
+
+  min-height: 350px;
+}
+
 .map__iframe {
+  position: relative;
+  z-index: 10;
+
+  width: 100%;
+
   border: none;
+}
+
+.map__box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 320px;
+  height: 350px;
+  margin-left: -160px;
+}
+
+.map__image {
+  width: 320px;
+  height: 350px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__box {
+    width: 768px;
+    margin-left: -384px;
+  }
+
+  .map__image {
+    width: 768px;
+  }
 }

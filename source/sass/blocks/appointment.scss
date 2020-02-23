@@ -30,3 +30,38 @@
   width: 100%;
   padding: 15px 35px;
 }
+
+.appontment__br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .appointment {
+    padding-top: 56px;
+    padding-bottom: 58px;
+  }
+
+  .appointment__title {
+    width: 325px;
+    margin-bottom: 30px;
+
+    @include text(30px, 26px, 700);
+  }
+
+  .appointment__info {
+    width: 440px;
+    margin-bottom: 44px;
+  }
+
+  .appointment__search {
+    display: block;
+    width: 458px;
+    padding: 15px 35px;
+
+    @include centering();
+  }
+
+  .appontment__br {
+    display: inline;
+  }
+}

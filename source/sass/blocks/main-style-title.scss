@@ -2,3 +2,9 @@
   @include text(18px, 26px, 700);
   color: $third-color-text;
 }
+
+@media (min-width: $tablet-width) {
+  .main-style-title {
+    @include text(21px, 26px, 700);
+  }
+}

@@ -1,4 +1,15 @@
+.copyright {
+  width: 140px;
+  text-align: center;
+}
+
 .copyright__text {
   @include text(14px, 26px);
   color: $third-color-text;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 10px;
+  }
 }

@@ -1,3 +1,10 @@
+.sedona-hashtag {
+  width: 151px;
+  margin-top: 0;
+
+  text-align: center;
+}
+
 .sedona-hashtag__link {
   @include text(21px, 26px, 700);
   color: $third-color-text;
@@ -11,5 +18,14 @@
 
   &:active {
     color: $third-color-text-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-hashtag {
+    width: 140px;
+    padding-top: 10px;
+
+    text-align: left;
   }
 }
