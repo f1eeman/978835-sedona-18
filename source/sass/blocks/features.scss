@@ -40,24 +40,9 @@
   }
 }
 
-.features__item--sublist {
-  padding-top: 35px;
-  padding-bottom: 37px;
-
-  order: -1;
-}
-
-.features__item--bg-gray {
-  @include mobile-padding();
-
-  background-color: $seventh-bg;
-}
-
-.features__item--icon {
-  position: relative;
-
+.features__sublist .features__item {
   width: 320px;
-  padding-left: 70px;
+  padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 28px;
 
@@ -66,6 +51,27 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.features__item--sublist {
+  padding-top: 35px;
+  padding-bottom: 37px;
+
+  order: -1;
+}
+
+.features__item--padding {
+  @include mobile-padding();
+}
+
+.features__item--bg-gray {
+  background-color: $seventh-bg;
+}
+
+.features__item--icon {
+  position: relative;
+
+  padding-left: 70px;
 
   &::before {
     content: "";
@@ -153,7 +159,7 @@
   padding-top: 40px;
 }
 
-.features__wrap .features__subtitle {
+.features__item--picture .features__subtitle {
   width: 320px;
 
   @include centering();
@@ -162,6 +168,11 @@
 }
 
 .features__wrap-image {
+  height: 260px;
+}
+
+.features__image {
+  width: 100%;
   height: 260px;
 }
 
@@ -190,11 +201,6 @@
   padding-right: 0;
 }
 
-.features__image {
-  width: 100%;
-  height: 260px;
-}
-
 .features__subtitle {
   @include mobile-padding();
   margin-top: 0;
@@ -209,7 +215,6 @@
   min-height: 25px;
 
   @include mobile-padding();
-
   margin-bottom: 12px;
 
   @include centering();
@@ -293,27 +298,6 @@
     flex-grow: 1;
   }
 
-  .features__item--bridge .features__wrap-image {
-    order: -1;
-  }
-
-  .features__wrap--tringle {
-    background-image: none;
-  }
-
-  .features__wrap .features__subtitle {
-    width: 205px;
-    margin-bottom: 9px;
-  }
-
-  .features__wrap .features__number {
-    margin-bottom: 17px;
-  }
-
-  .features__wrap .features__info {
-    width: 210px;
-  }
-
   .features__wrap-image {
     width: 512px;
     height: 256px;
@@ -323,6 +307,27 @@
   .features__image {
     width: 100%;
     height: 256px;
+  }
+
+  .features__item--bridge .features__wrap-image {
+    order: -1;
+  }
+
+  .features__wrap--tringle {
+    background-image: none;
+  }
+
+  .features__item--picture .features__subtitle {
+    width: 205px;
+    margin-bottom: 9px;
+  }
+
+  .features__item--picture .features__number {
+    margin-bottom: 17px;
+  }
+
+  .features__item--picture .features__info {
+    width: 210px;
   }
 
   .features__item--sublist {
