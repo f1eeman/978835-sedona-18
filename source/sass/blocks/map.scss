@@ -29,6 +29,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map {
+    max-width: 1200px;
+
+    @include centering();
+  }
+
   .map__box {
     width: 768px;
     margin-left: -384px;
@@ -36,5 +42,16 @@
 
   .map__image {
     width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__box {
+    width: 1200px;
+    margin-left: -600px;
+  }
+
+  .map__image {
+    width: 1200px;
   }
 }

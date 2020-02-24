@@ -37,8 +37,11 @@
 
 @media (min-width: $tablet-width) {
   .appointment {
+    max-width: 1200px;
     padding-top: 56px;
     padding-bottom: 58px;
+
+    @include centering();
   }
 
   .appointment__title {
@@ -63,5 +66,15 @@
 
   .appontment__br {
     display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .appointment {
+    padding-bottom: 66px;
+  }
+
+  .appointment__info {
+    margin-bottom: 49px;
   }
 }
