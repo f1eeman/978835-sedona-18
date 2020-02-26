@@ -25,4 +25,8 @@
   &[disabled] {
     @include disabled();
   }
+
+  &--no-bg {
+    background-color: transparent;
+  }
 }

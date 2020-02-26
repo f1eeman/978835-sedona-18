@@ -1,1 +1,14 @@
+.media {
+  padding-top: 38px;
+}
 
+.media__title {
+  width: 57%;
+
+  @include mobile-padding();
+  margin-top: 0;
+
+  @include centering();
+
+  text-align: center;
+}

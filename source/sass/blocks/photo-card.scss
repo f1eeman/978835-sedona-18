@@ -1,10 +1,87 @@
 .photo-card {
   @include text(14px, 24px, 700);
   color: $third-color-text;
+
+  border-bottom: 1px solid $color-border-photo;
+}
+
+.photo-card__container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding-top: 22px;
+  padding-bottom: 17px;
+
+  @include mobile-padding();
+  @include centering();
+}
+
+.photo-card__image-link {
+  display: block;
+  width: 280px;
+  height: 280px;
+  margin-bottom: 15px;
+
+  order: -1;
+}
+
+.photo-card__image {
+  width: 280px;
+  height: 280px;
+}
+
+.photo-card__title {
+  width: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .photo-card__text {
+  width: 140px;
+  margin-top: 0;
+  margin-bottom: 5px;
+
   font-weight: 400;
   color: $main-color-text;
   text-transform: none;
+}
+
+.photo-card__box-likes {
+  display: flex;
+  width: 100px;
+}
+
+.photo-card__like {
+  padding: 0;
+  margin-right: 11px;
+
+  @include button-reset();
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  @include transition-time();
+
+  &:hover .photo-card__icon-like,
+  &:focus .photo-card__icon-like {
+    fill: $secondary-bg-hover;
+  }
+
+  &:active .photo-card__icon-like {
+    fill: $secondary-bg-active;
+  }
+}
+
+.photo-card__icon-like {
+  width: 24px;
+  height: 22px;
+
+  fill: $eighth-bg;
+
+  @include transition-time();
+}
+
+.photo-card__count-likes {
+  padding-top: 3px;
 }

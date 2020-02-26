@@ -1,7 +1,26 @@
+.photo {
+  padding-top: 12px;
+}
+
 .photo__intro {
+  padding-bottom: 27px;
+
+  @include mobile-padding();
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include text(14px, 24px);
+  text-align: center;
+
+  border-bottom: 1px solid $color-border-photo;
 }
 
 .photo__list {
   @include list-reset();
+}
+
+@media (min-width: 321px) {
+  .photo__br {
+    display: none;
+  }
 }

@@ -1,3 +1,49 @@
+
+.video {
+  padding-top: 32px;
+}
+
+.video__box {
+  padding-bottom: 20px;
+}
+
+.video__question {
+  width: 81%;
+
+  @include mobile-padding();
+  margin-top: 0;
+  margin-bottom: 27px;
+
+  @include centering();
+  text-align: center;
+}
+
 .video__intro {
+  width: 88%;
+
+  @include mobile-padding();
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @include centering();
   @include text(14px, 24px);
+  text-align: center;
+}
+
+.video__wrapper {
+  width: 320px;
+  min-height: 267px;
+  padding-top: 201px;
+
+  @include mobile-padding();
+  @include centering();
+
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 320px 201px;
+  }
 }

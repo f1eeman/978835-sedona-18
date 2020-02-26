@@ -4,8 +4,35 @@
 }
 
 .copyright__text {
+  margin-right: 11px;
+
   @include text(14px, 26px);
   color: $third-color-text;
+}
+
+.copyright__link {
+  display: inline-block;
+  padding-top: 3px;
+
+  vertical-align: middle;
+
+  @include transition-time();
+
+  &:hover .copyright__logo-htmlacademy,
+  &:focus .copyright__logo-htmlacademy {
+    fill: $secondary-bg;
+  }
+
+  &:active .copyright__logo-htmlacademy {
+    fill: $eighth-bg;
+  }
+}
+
+.copyright__logo-htmlacademy {
+  width: 27px;
+  height: 34px;
+
+  @include transition-time();
 }
 
 @media (min-width: $tablet-width) {

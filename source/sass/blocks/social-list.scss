@@ -15,6 +15,45 @@
   display: block;
   width: 46px;
   height: 48px;
+  padding-top: 15px;
+
+  text-align: center;
 
   background-color: $secondary-bg;
+
+  @include transition-time();
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-bg-hover;
+  }
+
+  &:active {
+    background-color: $secondary-bg-active;
+  }
+
+  &:active .social-list__icon {
+    fill: $color-main-bg-active;
+  }
+}
+
+.social-list__icon {
+  fill: $color-main-bg;
+
+  @include transition-time();
+}
+
+.social-list__icon--twitter {
+  width: 18px;
+  height: 14px;
+}
+
+.social-list__icon--facebook {
+  width: 9px;
+  height: 18px;
+}
+
+.social-list__icon--youtube {
+  width: 20px;
+  height: 14px;
 }
