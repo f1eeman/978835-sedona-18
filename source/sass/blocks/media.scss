@@ -17,11 +17,18 @@
 
 @media (min-width: $tablet-width) {
   .media {
+    max-width: 1200px;
     padding-top: 75px;
   }
 
   .media__title {
     @include text(30px, 26px, 700);
     margin-bottom: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media {
+    padding-top: 110px;
   }
 }

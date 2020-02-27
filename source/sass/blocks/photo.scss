@@ -33,7 +33,6 @@
   .photo__list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
     padding-top: 42px;
     padding-left: 60px;
     padding-right: 60px;
@@ -41,5 +40,13 @@
 
   .photo__box-intro {
     border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__list {
+    padding-top: 44px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

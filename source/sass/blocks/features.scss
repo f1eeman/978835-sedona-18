@@ -241,8 +241,6 @@
 @media (min-width: $tablet-width) {
   .features {
     max-width: 1200px;
-
-    @include centering();
   }
 
   .features__box-header {

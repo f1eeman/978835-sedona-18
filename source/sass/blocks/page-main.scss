@@ -90,6 +90,22 @@
     width: 458px;
     height: 78px;
   }
+
+  .page-main__features {
+    @include centering();
+  }
+
+  .page-main__appointment {
+    @include centering();
+  }
+
+  .page-main__map {
+    @include centering();
+  }
+
+  .page-main__media {
+    @include centering();
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -117,5 +133,9 @@
   .page-main__banner-text {
     width: 460px;
     height: 79px;
+  }
+
+  .page-main__media {
+    margin-bottom: 87px;
   }
 }
