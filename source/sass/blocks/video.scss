@@ -22,6 +22,7 @@
 
 .video__intro {
   width: 88%;
+  max-width: 462px;
 
   @include mobile-padding();
   margin-top: 0;
@@ -141,4 +142,64 @@
   border-radius: 50%;
 
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding-top: 66px;
+  }
+
+  .video__question {
+    width: 65%;
+    margin-bottom: 30px;
+
+    @include text(30px, 26px, 700);
+  }
+
+  .video__box {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  .video__wrapper {
+    position: relative;
+
+    width: 648px;
+    min-height: 499px;
+    padding: 0;
+
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 648px 499px;
+    }
+  }
+
+  .video__wrapper-controls {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    width: 100%;
+    min-height: 93px;
+    padding: 23px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+
+    background-color: $video-control-bg;
+  }
+
+  .video__control {
+    position: static;
+
+    width: 389px;
+    min-height: 10px;
+    padding: 0;
+
+    background-color: transparent;
+  }
 }
