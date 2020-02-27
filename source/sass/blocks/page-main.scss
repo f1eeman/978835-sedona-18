@@ -46,6 +46,10 @@
   height: 39px;
 }
 
+.page-main__media {
+  margin-bottom: 43px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__banner {
     max-width: 1200px;

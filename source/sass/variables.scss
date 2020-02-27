@@ -1,5 +1,6 @@
 $main-font: "PTSans", "Arial", sans-serif;
 $main-color-text: rgb(51, 51, 51);
+$main-color-text-active: rgba(51, 51, 51, 0.3);
 $secondary-color-text: rgb(255, 255, 255);
 $secondary-color-text-active: rgba(255, 255, 255, 0.3);
 $third-color-text: rgb(0, 0, 0);
@@ -17,7 +18,11 @@ $fifth-bg: rgb(242, 242, 242);
 $sixth-bg: rgb(229, 229, 229);
 $seventh-bg: rgb(238, 238, 238);
 $eighth-bg: rgba(0, 0, 0, 0.3);
+$video-control-bg: rgba(0, 0, 0, 0.6);
+$video-scale-bg: rgba(255, 255, 255, 0.2);
 $banner-bg: rgb(178, 218, 241);
+$video-controls-bg: rgb(92, 104, 112);
+$photo-card-bg: rgb(234, 234, 234);
 $color-border-top-site-list: rgba(255, 255, 255, 0.2);
 $color-border-bottom-site-list: rgba(1, 1, 1, 0.2);
 $color-border-bottom-features-item: rgb(214, 214, 214);

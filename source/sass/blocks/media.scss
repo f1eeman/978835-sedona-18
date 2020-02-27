@@ -4,11 +4,24 @@
 
 .media__title {
   width: 57%;
+  max-width: 432px;
 
   @include mobile-padding();
   margin-top: 0;
 
   @include centering();
-
+  @include text(18px, 26px, 700);
+  color: $third-color-text;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .media {
+    padding-top: 75px;
+  }
+
+  .media__title {
+    @include text(30px, 26px, 700);
+    margin-bottom: 19px;
+  }
 }

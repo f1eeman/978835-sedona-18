@@ -51,59 +51,61 @@
         </p>
         </div>
       <section class="page-main__media media">
-        <h2 class="media__title main-style-title">Фото и видео</h2>
+        <h2 class="media__title">Фото и видео</h2>
         <section class="media__photo photo">
           <h3 class="visually-hidden">Фото</h3>
-          <p class="photo__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут <br class="photo__br"> вам забыть о политике и экономике.</p>
+          <div class="photo__box-intro">
+            <p class="photo__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут <br class="photo__br"> вам забыть о политике и экономике.</p>
+          </div>
           <ul class="photo__list">
-            <li class="photo__item photo-card">
+            <li class="photo__item photo-card photo-card--full">
               <div class="photo-card__container">
                 <div class="photo-card__wrapper">
-                <div class="photo-card__box-header">
-                  <h4 class="photo-card__title">Неродные просторы</h4>
-                  <p class="photo-card__text">
-                    <span class="photo-card__author">Автор фото:</span>
-                    <span class="photo-card__name">Антон</span>
-                  </p>
+                  <div class="photo-card__box-header">
+                    <h4 class="photo-card__title">Неродные просторы</h4>
+                    <p class="photo-card__text">
+                      <span class="photo-card__author">Автор фото:</span>
+                      <span class="photo-card__name">Антон</span>
+                    </p>
+                  </div>
+                  <div class="photo-card__box-likes">
+                    <button class="photo-card__like" type="button">
+                      <span class="visually-hidden">Поставить лайк</span>
+                      <svg class="photo-card__icon-like" width="24" height="22">
+                        <use xlink:href="#icon-like"></use>
+                      </svg>
+                    </button>
+                    <span class="photo-card__count-likes">1359</span>
+                  </div>
                 </div>
-                <div class="photo-card__box-likes">
-                  <button class="photo-card__like" type="button">
-                    <span class="visually-hidden">Поставить лайк</span>
-                    <svg class="photo-card__icon-like" width="24" height="22">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                  </button>
-                  <span class="photo-card__count-likes">1359</span>
-                </div>
-                </div>
-                <a class="photo-card__image-link" href="#">
+                <a class="photo-card__image-link photo-card__image-link--full" href="#">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+                    <img class="photo-card__image photo-card__image--full" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
                   </picture>
                 </a>
               </div>
             </li>
-            <li class="photo__item photo-card">
+            <li class="photo__item photo-card photo-card--small">
               <div class="photo-card__container">
-                <div class="photo-card__wrapper">
-                <div class="photo-card__box-header">
-                  <h4 class="photo-card__title">Местная растительность</h4>
-                  <p class="photo-card__text">
-                    <span class="photo-card__author">Автор фото:</span>
-                    <span class="photo-card__name">Сергей</span>
-                  </p>
-                </div>
-                <div class="photo-card__box-likes">
-                  <button class="photo-card__like" type="button">
-                    <span class="visually-hidden">Поставить лайк</span>
-                    <svg class="photo-card__icon-like" width="24" height="22">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                  </button>
-                  <span class="photo-card__count-likes">365</span>
-                </div>
+                <div class="photo-card__wrapper photo-card__wrapper--small">
+                  <div class="photo-card__box-header">
+                    <h4 class="photo-card__title">Местная растительность</h4>
+                    <p class="photo-card__text">
+                      <span class="photo-card__author">Автор фото:</span>
+                      <span class="photo-card__name">Сергей</span>
+                    </p>
+                  </div>
+                  <div class="photo-card__box-likes">
+                    <button class="photo-card__like" type="button">
+                      <span class="visually-hidden">Поставить лайк</span>
+                      <svg class="photo-card__icon-like" width="24" height="22">
+                        <use xlink:href="#icon-like"></use>
+                      </svg>
+                    </button>
+                    <span class="photo-card__count-likes">365</span>
+                  </div>
                 </div>
                 <a class="photo-card__image-link" href="#">
                   <picture>
@@ -114,25 +116,25 @@
                 </a>
               </div>
             </li>
-            <li class="photo__item photo-card">
+            <li class="photo__item photo-card photo-card--small">
               <div class="photo-card__container">
-                <div class="photo-card__wrapper">
-                <div class="photo-card__box-header">
-                  <h4 class="photo-card__title">Дорога на север</h4>
-                  <p class="photo-card__text">
-                    <span class="photo-card__author">Автор фото:</span>
-                    <span class="photo-card__name">Петр</span>
-                  </p>
-                </div>
-                <div class="photo-card__box-likes">
-                  <button class="photo-card__like" type="button">
-                    <span class="visually-hidden">Поставить лайк</span>
-                    <svg class="photo-card__icon-like" width="24" height="22">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                  </button>
-                  <span class="photo-card__count-likes">522</span>
-                </div>
+                <div class="photo-card__wrapper photo-card__wrapper--small">
+                  <div class="photo-card__box-header">
+                    <h4 class="photo-card__title">Дорога на север</h4>
+                    <p class="photo-card__text">
+                      <span class="photo-card__author">Автор фото:</span>
+                      <span class="photo-card__name">Петр</span>
+                    </p>
+                  </div>
+                  <div class="photo-card__box-likes">
+                    <button class="photo-card__like" type="button">
+                      <span class="visually-hidden">Поставить лайк</span>
+                      <svg class="photo-card__icon-like" width="24" height="22">
+                        <use xlink:href="#icon-like"></use>
+                      </svg>
+                    </button>
+                    <span class="photo-card__count-likes">522</span>
+                  </div>
                 </div>
                 <a class="photo-card__image-link" href="#">
                   <picture>
@@ -143,25 +145,25 @@
                 </a>
               </div>
             </li>
-            <li class="photo__item photo-card">
+            <li class="photo__item photo-card photo-card--small">
               <div class="photo-card__container">
-                <div class="photo-card__wrapper">
-                <div class="photo-card__box-header">
-                  <h4 class="photo-card__title">Дерзкий мост</h4>
-                  <p class="photo-card__text">
-                    <span class="photo-card__author">Автор фото:</span>
-                    <span class="photo-card__name">Матвей</span>
-                  </p>
-                </div>
-                <div class="photo-card__box-likes">
-                  <button class="photo-card__like" type="button">
-                    <span class="visually-hidden">Поставить лайк</span>
-                    <svg class="photo-card__icon-like" width="24" height="22">
-                      <use xlink:href="#icon-like"></use>
-                    </svg>
-                  </button>
-                  <span class="photo-card__count-likes">762</span>
-                </div>
+                <div class="photo-card__wrapper photo-card__wrapper--small">
+                  <div class="photo-card__box-header">
+                    <h4 class="photo-card__title">Дерзкий мост</h4>
+                    <p class="photo-card__text">
+                      <span class="photo-card__author">Автор фото:</span>
+                      <span class="photo-card__name">Матвей</span>
+                    </p>
+                  </div>
+                  <div class="photo-card__box-likes">
+                    <button class="photo-card__like" type="button">
+                      <span class="visually-hidden">Поставить лайк</span>
+                      <svg class="photo-card__icon-like" width="24" height="22">
+                        <use xlink:href="#icon-like"></use>
+                      </svg>
+                    </button>
+                    <span class="photo-card__count-likes">762</span>
+                  </div>
                 </div>
                 <a class="photo-card__image-link" href="#">
                   <picture>
@@ -177,29 +179,32 @@
         <section class="media__video video">
           <h3 class="visually-hidden">Видео</h3>
           <div class="video__box">
-            <p class="video__question main-style-title">Все еще сомневаетесь?</p>
+            <p class="video__question">Все еще сомневаетесь?</p>
             <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__wrapper">
             <div class="video__wrapper-controls">
-              <button class="video__replay" type="button">
+              <button class="video__button video__button--replay" type="button">
                 <span class="visually-hidden">Проиграть занаво</span>
-                <svg class="video__icon-replay" width="16" height="20">
+                <svg class="video__icon video__icon--replay" width="16" height="20">
                   <use xlink:href="#icon-video-replay"></use>
                 </svg>
               </button>
               <div class="video__control">
-                <!-- scale and button -->
+                <div class="video__scale"></div>
+                <button class="video__toggle" type="button">
+                  <span class="visually-hidden">time button</span>
+                </button>
               </div>
-              <button class="video__subtitles" type="button">
+              <button class="video__button video__button--subtitles" type="button">
                 <span class="visually-hidden">Включить субтитры</span>
-                <svg class="video__icon-subtitles" width="32" height="20">
+                <svg class="video__icon video__icon--subtitles" width="32" height="20">
                   <use xlink:href="#icon-video-subtitles"></use>
                 </svg>
               </button>
-              <button class="video__fullscreen" type="button">
+              <button class="video__button video__button--fullscreen" type="button">
                 <span class="visually-hidden">На весь экран</span>
-                <svg class="video__icon-fullscreen" width="20" height="20">
+                <svg class="video__icon video__icon--fullscreen" width="20" height="20">
                   <use xlink:href="#icon-video-fullscreen"></use>
                 </svg>
               </button>

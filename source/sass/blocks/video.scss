@@ -15,6 +15,8 @@
   margin-bottom: 27px;
 
   @include centering();
+  @include text(18px, 26px, 700);
+  color: $third-color-text;
   text-align: center;
 }
 
@@ -46,4 +48,97 @@
     background-image: url("../img/video-mobile@2x.jpg");
     background-size: 320px 201px;
   }
+}
+
+.video__wrapper-controls {
+  position: relative;
+
+  display: flex;
+  padding: 23px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+
+  background-color: $fifth-bg;
+}
+
+.video__button {
+  padding: 0;
+
+  @include button-reset();
+
+  cursor: pointer;
+
+  &:hover .video__icon,
+  &:focus .video__icon {
+    fill: $main-color-text;
+  }
+
+  &:active .video__icon {
+    fill: $main-color-text-active;
+  }
+}
+
+.video__button--subtitles {
+  margin-left: auto;
+}
+
+.video__button--fullscreen {
+  margin-left: 31px;
+}
+
+.video__icon {
+  fill: $video-controls-bg;
+}
+
+.video__icon--replay {
+  width: 16px;
+  height: 20px;
+}
+
+.video__icon--subtitles {
+  width: 32px;
+  height: 20px;
+}
+
+.video__icon--fullscreen {
+  width: 20px;
+  height: 20px;
+}
+
+.video__control {
+  position: absolute;
+  bottom: 66px;
+  left: 0;
+
+  width: 100%;
+  min-height: 45px;
+  padding-top: 21px;
+  padding-left: 22px;
+  padding-right: 23px;
+
+  background-color: $video-control-bg;
+}
+
+.video__scale {
+  height: 3px;
+
+  background-color: $video-scale-bg;
+}
+
+.video__toggle {
+  position: absolute;
+  top: 18px;
+  left: 59px;
+
+  display: block;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+
+  @include button-reset();
+
+  background-color: $color-main-bg;
+  border-radius: 50%;
+
+  cursor: pointer;
 }
