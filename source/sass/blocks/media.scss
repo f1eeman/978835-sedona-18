@@ -19,6 +19,8 @@
   .media {
     max-width: 1200px;
     padding-top: 75px;
+
+    @include tablet-padding();
   }
 
   .media__title {

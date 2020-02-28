@@ -31,16 +31,11 @@
     align-items: flex-start;
     max-width: 1200px;
     padding-top: 32px;
-    padding-left: 60px;
-    padding-right: 60px;
+
+    @include tablet-padding();
     padding-bottom: 35px;
 
     @include centering();
-
-    &--form-page {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
   }
 
   .page-footer__sedona-hashtag {
