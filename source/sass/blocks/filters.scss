@@ -1,4 +1,64 @@
+.filters {
+  padding-top: 39px;
+}
+
+.filters__title {
+  width: 240px;
+  margin-top: 0;
+
+  @include mobile-padding();
+  margin-bottom: 26px;
+
+  @include centering();
+  @include text(18px, 26px, 700);
+  color: $third-color-text;
+  text-align: center;
+}
+
+.filters__box-intro {
+  padding-bottom: 3px;
+
+  border-bottom: 1px solid $color-border-form;
+}
+
 .filters__intro {
+  max-width: 481px;
+
+  @include mobile-padding();
+  margin-top: 0;
+
+  @include centering();
   @include text(14px, 24px);
   color: $main-color-text;
+  text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .filters {
+    padding-top: 75px;
+  }
+
+  .filters__title {
+    width: 375px;
+    margin-bottom: 32px;
+
+    @include text(30px, 26px, 700px);
+
+    &--impression {
+      margin: 0;
+
+      text-align: left;
+    }
+
+    &--user-data {
+      margin: 0;
+
+      text-align: left;
+    }
+  }
+
+  .filters__box-intro {
+    border-bottom: none;
+  }
 }
