@@ -7,7 +7,7 @@
 }
 
 .photo__intro {
-  max-width: 472px;
+  max-width: 550px;
   padding-bottom: 27px;
 
   @include mobile-padding();
@@ -38,6 +38,10 @@
 
   .photo__box-intro {
     border-bottom: none;
+  }
+
+  .photo__intro {
+    @include tablet-padding();
   }
 }
 

@@ -3,8 +3,8 @@
 }
 
 .media__title {
-  width: 57%;
-  max-width: 432px;
+  width: 60%;
+  max-width: 520px;
 
   @include mobile-padding();
   margin-top: 0;
@@ -24,13 +24,16 @@
   }
 
   .media__title {
-    @include text(30px, 26px, 700);
+    @include tablet-padding();
     margin-bottom: 19px;
+
+    @include text(30px, 26px, 700);
   }
 }
 
 @media (min-width: $desktop-width) {
   .media {
+    padding: 0;
     padding-top: 110px;
   }
 }

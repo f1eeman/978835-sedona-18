@@ -9,6 +9,7 @@
 
 .video__question {
   width: 81%;
+  max-width: 520px;
 
   @include mobile-padding();
   margin-top: 0;
@@ -22,7 +23,7 @@
 
 .video__intro {
   width: 88%;
-  max-width: 462px;
+  max-width: 542px;
 
   @include mobile-padding();
   margin-top: 0;
@@ -150,10 +151,16 @@
   }
 
   .video__question {
-    width: 65%;
+    width: 75%;
+
+    @include tablet-padding();
     margin-bottom: 30px;
 
     @include text(30px, 26px, 700);
+  }
+
+  .video__intro {
+    @include tablet-padding();
   }
 
   .video__box {
