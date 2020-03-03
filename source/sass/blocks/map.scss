@@ -21,6 +21,22 @@
   width: 320px;
   height: 350px;
   margin-left: -160px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 163px;
+    left: 146px;
+
+    display: block;
+    width: 27px;
+    height: 27px;
+
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .map__image {
@@ -36,6 +52,10 @@
   .map__box {
     width: 768px;
     margin-left: -384px;
+
+    &::before {
+      left: 370px;
+    }
   }
 
   .map__image {
@@ -49,6 +69,10 @@
 
     width: 100%;
     margin-left: 0;
+
+    &::before {
+      left: 585px;
+    }
   }
 
   .map__image {

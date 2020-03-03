@@ -191,6 +191,15 @@
 
       background-color: $fifth-bg;
     }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: $label-switch-bg-hover;
+    }
+
+    &:active::before {
+      background-color: $label-switch-bg-active;
+    }
   }
 
   &--radio {
@@ -221,6 +230,10 @@
     background-color: $color-checked-label;
     border-radius: 50%;
   }
+
+  &:active::after {
+    background-color: $color-checked-label-active;
+  }
 }
 
 .filter-form__control:checked + .filter-form__label--checkbox {
@@ -240,6 +253,10 @@
     border-right-style: none;
 
     transform: rotate(-45deg);
+  }
+
+  &:active::after {
+    border-color: $color-checked-checkbox-active;
   }
 }
 

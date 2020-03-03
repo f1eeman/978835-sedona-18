@@ -207,6 +207,19 @@
   background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: 50% -16px;
+  background-size: contain;
+}
+
+@media (min-width: 500px) {
+  .features__wrap--tringle {
+    background-position: 50% -36px;
+  }
+}
+
+@media (min-width: 690px) {
+  .features__wrap--tringle {
+    background-position: 50% -46px;
+  }
 }
 
 .features__wrap--bridge {
