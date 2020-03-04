@@ -22,14 +22,14 @@
   border: none;
 }
 
-@mixin disabled() {
+@mixin button-disabled() {
   background-color: $disabled-color-bg;
 }
 
-// @mixin label-disabled {
-//   opacity: 0.3;
-//   pointer-events: none;
-// }
+@mixin disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 //Лечит проблему поведения SVG элемента, как ссылки, при нажатии в IE11
 @mixin ie-bug-fix() {

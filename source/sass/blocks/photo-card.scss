@@ -70,6 +70,7 @@
 
   &:active .photo-card__icon-like {
     fill: $secondary-bg-active;
+    transform: scale(0.9);
   }
 }
 

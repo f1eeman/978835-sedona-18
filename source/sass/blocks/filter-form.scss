@@ -157,6 +157,18 @@
     fill: $error-icon-fill;
     background-color: $error-bg;
   }
+
+  &[disabled] {
+    @include disabled();
+  }
+
+  &[disabled] + .filter-form__label {
+    @include disabled();
+  }
+
+  &[disabled] + .filter-form__icon {
+    @include disabled();
+  }
 }
 
 .filter-form__label {
@@ -266,7 +278,7 @@
   top: 32px;
 
   width: 58px;
-  height: 57px;
+  height: 58px;
   padding-top: 21px;
   padding-left: 21px;
 

@@ -70,9 +70,11 @@
   height: 83px;
 
   @include centering();
+
   order: 2;
 
   @include transition-time();
+  @include ie-bug-fix();
 
   &[href]:hover,
   &[href]:focus {

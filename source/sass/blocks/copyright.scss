@@ -17,6 +17,7 @@
   vertical-align: middle;
 
   @include transition-time();
+  @include ie-bug-fix();
 
   &:hover .copyright__logo-htmlacademy,
   &:focus .copyright__logo-htmlacademy {
