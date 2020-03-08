@@ -8,7 +8,6 @@
 .photo-card__container {
   display: flex;
   flex-direction: column;
-  width: 320px;
   padding-top: 22px;
   padding-bottom: 17px;
 
@@ -18,7 +17,6 @@
 
 .photo-card__image-link {
   display: block;
-  width: 280px;
   height: 280px;
   margin-bottom: 15px;
 
@@ -26,8 +24,15 @@
 }
 
 .photo-card__image {
-  width: 280px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
+
+  vertical-align: bottom;
+
+  object-fit: cover;
+  // Object-fit polyfill
+  // stylelint-disable-next-line
+  font-family: "object-fit: cover";
 }
 
 .photo-card__title {
@@ -112,11 +117,6 @@
 
   .photo-card__image-link--full {
     height: 400px;
-  }
-
-  .photo-card__image {
-    width: 100%;
-    height: 267px;
   }
 
   .photo-card__image--full {

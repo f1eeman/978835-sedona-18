@@ -232,9 +232,17 @@
 }
 
 .features__image {
-  width: 320px;
-  height: 260px;
+  width: 100%;
+  height: 100%;
+
+  vertical-align: bottom;
+
+  object-fit: cover;
+  // Object-fit polyfill
+  // stylelint-disable-next-line
+  font-family: "object-fit: cover";
 }
+
 
 .features__wrapper {
   padding-top: 28px;
@@ -318,12 +326,9 @@
   .features__box-image {
     width: 512px;
     height: 256px;
+    margin-left: 0;
+    margin-right: 0;
     flex-grow: 1;
-  }
-
-  .features__image {
-    width: 100%;
-    height: 256px;
   }
 
   .features__item--bridge .features__box-image {
