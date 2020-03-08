@@ -149,6 +149,13 @@
     outline: 4px solid $sixth-bg;
   }
 
+  &:focus + .filter-form__label {
+    &::before {
+      outline: thin dotted blue;
+      outline-offset: 2px;
+    }
+  }
+
   &:focus:invalid {
     outline: 4px solid $error-bg;
   }

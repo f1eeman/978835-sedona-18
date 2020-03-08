@@ -138,12 +138,12 @@
   text-align: left;
 }
 
-.features__subtitle--attractions {
+.features__wrap .features__subtitle--attractions {
   width: 320px;
 
   @include centering();
 
-  color: $secondary-color-text !important;
+  color: $secondary-color-text;
 }
 
 .features__subtitle--fringe {
@@ -339,7 +339,7 @@
     background-image: none;
   }
 
-  .features__subtitle--attractions {
+  .features__wrap .features__subtitle--attractions {
     width: 205px;
     margin-bottom: 9px;
   }
