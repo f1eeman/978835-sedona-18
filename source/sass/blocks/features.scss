@@ -296,62 +296,6 @@
     flex-grow: 1;
   }
 
-  .features__wrapper {
-    padding-top: 45px;
-    padding-bottom: 43px;
-
-    border-bottom: none;
-  }
-
-  .features__subtitle--fringe {
-    width: 130px;
-    margin-bottom: 9px;
-  }
-
-  .features__number--fringe {
-    margin-bottom: 18px;
-  }
-
-  .features__info--fringe {
-    width: 165px;
-  }
-
-  .features__wrap {
-    width: 256px;
-    min-height: 256px;
-    padding-top: 45px;
-    flex-grow: 1;
-  }
-
-  .features__box-image {
-    width: 512px;
-    height: 256px;
-    margin-left: 0;
-    margin-right: 0;
-    flex-grow: 1;
-  }
-
-  .features__item--bridge .features__box-image {
-    order: -1;
-  }
-
-  .features__wrap--tringle {
-    background-image: none;
-  }
-
-  .features__wrap .features__subtitle--attractions {
-    width: 205px;
-    margin-bottom: 9px;
-  }
-
-  .features__number--attractions {
-    margin-bottom: 17px;
-  }
-
-  .features__info--attractions {
-    width: 210px;
-  }
-
   .features__item--sublist {
     padding-top: 0;
     padding-bottom: 0;
@@ -370,21 +314,6 @@
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 0;
-
-    text-align: center;
-  }
-
-  .features__subtitle--comfort {
-    @include centering();
-    margin-bottom: 20px;
-
-    text-align: center;
-  }
-
-  .features__info--comfort {
-    width: 165px;
-
-    @include centering();
 
     text-align: center;
   }
@@ -430,6 +359,77 @@
 
       background-image: url("../img/icon-burger.svg");
     }
+  }
+
+  .features__subtitle--fringe {
+    width: 130px;
+    margin-bottom: 9px;
+  }
+
+  .features__subtitle--comfort {
+    @include centering();
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  .features__wrap .features__subtitle--attractions {
+    width: 205px;
+    margin-bottom: 9px;
+  }
+
+  .features__number--fringe {
+    margin-bottom: 18px;
+  }
+
+  .features__info--fringe {
+    width: 165px;
+  }
+
+  .features__wrap {
+    width: 256px;
+    min-height: 256px;
+    padding-top: 45px;
+    flex-grow: 1;
+  }
+
+  .features__wrap--tringle {
+    background-image: none;
+  }
+
+  .features__wrapper {
+    padding-top: 45px;
+    padding-bottom: 43px;
+
+    border-bottom: none;
+  }
+
+  .features__box-image {
+    width: 512px;
+    height: 256px;
+    margin-left: 0;
+    margin-right: 0;
+    flex-grow: 1;
+  }
+
+  .features__item--bridge .features__box-image {
+    order: -1;
+  }
+
+  .features__number--attractions {
+    margin-bottom: 17px;
+  }
+
+  .features__info--attractions {
+    width: 210px;
+  }
+
+  .features__info--comfort {
+    width: 165px;
+
+    @include centering();
+
+    text-align: center;
   }
 
   .features__br {
