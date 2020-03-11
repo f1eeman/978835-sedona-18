@@ -156,15 +156,6 @@
     }
   }
 
-  &:focus:invalid {
-    outline: 4px solid $error-bg;
-  }
-
-  &:focus:invalid + .filter-form__icon {
-    fill: $error-icon-fill;
-    background-color: $error-bg;
-  }
-
   &[disabled] {
     @include disabled();
   }
@@ -175,6 +166,22 @@
 
   &[disabled] + .filter-form__icon {
     @include disabled();
+  }
+}
+
+.filter-form__control--error {
+  outline: 4px solid $error-bg;
+  background-color: $color-main-bg;
+
+  &:hover,
+  &:focus {
+    outline: 4px solid $error-bg;
+    background-color: $color-main-bg;
+  }
+
+  & + .filter-form__icon {
+    fill: $error-icon-fill;
+    background-color: $error-bg;
   }
 }
 

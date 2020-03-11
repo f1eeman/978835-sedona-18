@@ -60,15 +60,15 @@
             <ul class="filter-form__list filter-form__list--user-data" role="presentation">
               <li class="filter-form__item filter-form__item--user-data">
                 <label class="filter-form__label" for="user-name">Имя*:</label>
-                <input class="filter-form__control filter-form__control--user-data" id="user-name" name="name" type="text" placeholder="Петр" value="" required="">
+                <input class="filter-form__control filter-form__control--user-data" id="user-name" name="name" type="text" placeholder="Петр">
               </li>
               <li class="filter-form__item filter-form__item--user-data">
                 <label class="filter-form__label" for="user-surname">Фамилия*:</label>
-                <input class="filter-form__control filter-form__control--user-data" id="user-surname" name="surname" type="text" placeholder="Иванов" value="" required="">
+                <input class="filter-form__control filter-form__control--user-data" id="user-surname" name="surname" type="text" placeholder="Иванов">
               </li>
               <li class="filter-form__item filter-form__item--user-data">
                 <label class="filter-form__label" for="user-patronymic">Отчество:</label>
-                <input class="filter-form__control filter-form__control--user-data filter-form__control--patronymic" id="user-patronymic" name="patronymic" type="text" placeholder="Александрович" value="">
+                <input class="filter-form__control filter-form__control--user-data filter-form__control--patronymic" id="user-patronymic" name="patronymic" type="text" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -78,15 +78,15 @@
             </div>
               <ul class="filter-form__list filter-form__list--contacts">
               <li class="filter-form__item filter-form__item--contacts filter-form__item--phone">
-                <label class="filter-form__label filter-form__label--contacts filter-form__label--phone" for="user-tel"><span class="filter-form__word">Контактный</span> телефон*:</label>
-                <input class="filter-form__control filter-form__control--contacts" id="user-tel" name="user-tel" type="tel" placeholder="Введите телефон" value="" required="">
+                <label class="filter-form__label filter-form__label--contacts filter-form__label--phone" for="user-phone"><span class="filter-form__word">Контактный</span> телефон*:</label>
+                <input class="filter-form__control filter-form__control--contacts" id="user-phone" name="user-phone" type="phone" placeholder="Введите телефон">
                 <svg class="filter-form__icon filter-form__icon--contacts filter-form__icon--phone" width="18" height="18">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </li>
               <li class="filter-form__item filter-form__item--contacts filter-form__item--email">
                 <label class="filter-form__label filter-form__label--contacts filter-form__label--email" for="user-email">Электронная почта*:</label>
-                <input class="filter-form__control filter-form__control--contacts" id="user-email" name="user-email" type="email" placeholder="Введите e-mail" value="" required="">
+                <input class="filter-form__control filter-form__control--contacts" id="user-email" name="user-email" type="email" placeholder="Введите e-mail">
                 <svg class="filter-form__icon filter-form__icon--contacts filter-form__icon--email" width="16" height="12">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
@@ -189,17 +189,16 @@
         </div>
       </div>
     </footer>
-    <!-- <section class="page-modal-error modal-error">
+    <section class="page-modal-error modal-error">
       <h2 class="modal-error__title">Что-то пошло не так!</h2>
       <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="modal-error__button button" type="button">Ок</button>
     </section>
-    <section class="page-modal-review modal-review">
-      <h2 class="modal-review__title">Ваш отзыв отправлен!</h2>
-      <p class="modal-review__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="modal-review__button button" type="button">Закрыть окно</button>
+    <section class="page-modal-success modal-success">
+      <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
+      <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal-success__button button" type="button">Закрыть окно</button>
     </section>
-    <div class="page-modal-overlay"></div> -->
     <script src="js/script.js"></script>
   </body>
 </html>
