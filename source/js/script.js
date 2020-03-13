@@ -1,15 +1,27 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var popupError = document.querySelector(".modal-error");
-var closeError = popupError.querySelector(".modal-error__button");
-var popupSuccess = document.querySelector(".modal-success");
-var closeSuccess = popupSuccess.querySelector(".modal-success__button")
-var form = document.querySelector(".filter-form");
-var userName = document.querySelector("[name=name]");
-var userSurname = document.querySelector("[name=surname]");
-var userPhone = document.querySelector("[name=user-phone]");
-var userEmail = document.querySelector("[name=user-email]");
-var array = [userName, userSurname, userPhone, userEmail];
+  var popupError = document.querySelector(".modal-error");
+  var closeError = document.querySelector(".modal-error__button");
+  var popupSuccess = document.querySelector(".modal-success");
+  var closeSuccess = document.querySelector(".modal-success__button")
+  var form = document.querySelector(".filter-form");
+  var userName = document.querySelector("[name=name]");
+  var userSurname = document.querySelector("[name=surname]");
+  var userPhone = document.querySelector("[name=user-phone]");
+  var userEmail = document.querySelector("[name=user-email]");
+  var array = [userName, userSurname, userPhone, userEmail];
+// if (document.querySelector(".modal-error")) {
+//   var popupError = document.querySelector(".modal-error");
+//   var closeError = popupError.querySelector(".modal-error__button");
+//   var popupSuccess = document.querySelector(".modal-success");
+//   var closeSuccess = popupSuccess.querySelector(".modal-success__button")
+//   var form = document.querySelector(".filter-form");
+//   var userName = form.querySelector("[name=name]");
+//   var userSurname = form.querySelector("[name=surname]");
+//   var userPhone = form.querySelector("[name=user-phone]");
+//   var userEmail = form.querySelector("[name=user-email]");
+//   var array = [userName, userSurname, userPhone, userEmail];
+// }
 
 navMain.classList.remove('main-nav--no-js');
 

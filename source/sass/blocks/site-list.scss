@@ -55,6 +55,10 @@
 
     text-align: center;
 
+    &:nth-child(2) {
+      margin-right: 153px;
+    }
+
     &:nth-child(3) {
       margin-left: auto;
     }
@@ -77,3 +81,10 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    &:nth-child(2) {
+      margin-right: 240px;
+    }
+  }
+}
