@@ -6,11 +6,11 @@
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 100%, 50% 0;
-  background-size: contain, auto;
+  background-size: contain, cover;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
-    background-size: contain, 768px 389px;
+    background-size: contain, cover;
   }
 }
 
