@@ -53,6 +53,7 @@
 
 .photo-card__box-likes {
   display: flex;
+  flex-wrap: wrap;
   width: 100px;
 }
 
@@ -125,6 +126,7 @@
 
   .photo-card__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     min-height: 80px;
     padding-top: 15px;
